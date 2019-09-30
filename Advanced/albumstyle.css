@@ -2,30 +2,48 @@ body {
   background-color: #FAFBFC;
   font-family: verdana;
   color: darkgrey; }
+
 nav {
-  color: darkgray;
-  font-size: 22px;
-}
-nav a {
-  color: darkgray;
-  font-size: 22px;
-}
+  padding: 10px;
+  height: 50px; }
+
 .nav-item {
   display: inline;
-  margin: 0 20px; 
-}
-nav a:link, nav a:visited {
-  text-decoration: none; 
-}
+  margin: 0 20px; }
+
+nav a:link {
+  color: darkgray;
+  font-size: 22px;
+  text-decoration: none; }
+
 nav a:hover {
-  text-decoration: underline; 
-}
-img {
-  width: 300px; 
-}
+  color: darkgray;
+  font-size: 22px;
+  text-decoration: underline; }
+
+nav a:visited {
+  color: darkgray;
+  font-size: 22px;
+  text-decoration: none; }
+
 #albumcontainer {
   display: flex;
-  flex-wrap: wrap; 
-}
+  flex-wrap: wrap; }
+
+figure {
+  width: 300px;
+  height: 250px; }
+
+.bild {
+  height: 80%;
+  background-color: grey; }
+
+figcaption {
+  height: 20%;
+  background-color: black;
+  color: grey; }
+
+img {
+  width: 100%; }
 
 /*# sourceMappingURL=albumstyle.css.map */
