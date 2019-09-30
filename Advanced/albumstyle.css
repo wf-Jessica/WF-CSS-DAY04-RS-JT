@@ -8,7 +8,7 @@ nav {
   height: 50px; }
 
 .nav-item {
-  display: inline;
+  display: inline-block;
   margin: 0 20px; }
 
 nav a:link {
@@ -26,13 +26,20 @@ nav a:visited {
   font-size: 22px;
   text-decoration: none; }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%; }
+
 #albumcontainer {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 100%; }
 
 figure {
-  width: 300px;
-  height: 250px; }
+  width: 33%;
+  margin: 0; }
 
 .bild {
   height: 80%;
@@ -45,5 +52,12 @@ figcaption {
 
 img {
   width: 100%; }
+
+@media screen and (max-width: 1080px) and (min-resolution: 192dpi) {
+  #albumcontainer {
+    background-color: grey; }
+
+  figure {
+    width: 100%; } }
 
 /*# sourceMappingURL=albumstyle.css.map */
