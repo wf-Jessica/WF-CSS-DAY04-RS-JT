@@ -1,1 +1,31 @@
-body
+body {
+  background-color: #FAFBFC;
+  font-family: verdana;
+  color: darkgrey; }
+nav {
+  color: darkgray;
+  font-size: 22px;
+}
+nav a {
+  color: darkgray;
+  font-size: 22px;
+}
+.nav-item {
+  display: inline;
+  margin: 0 20px; 
+}
+nav a:link, nav a:visited {
+  text-decoration: none; 
+}
+nav a:hover {
+  text-decoration: underline; 
+}
+img {
+  width: 300px; 
+}
+#albumcontainer {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+/*# sourceMappingURL=albumstyle.css.map */
