@@ -2,25 +2,26 @@ body
 	background-color: #FAFBFC
 	font-family: verdana
 	color: darkgrey
+	font-size: 22px 
+
 
 nav
 	padding: 10px
-	height: 50px
+	display: flex
+	text-align: left
 .nav-item 	
 	display: inline-block
 	margin: 0 20px
 nav a:link 
 	color: darkgray 
-	font-size: 22px 
 	text-decoration: none
 nav a:hover
 	color: darkgray 
-	font-size: 22px 
 	text-decoration: underline
 nav a:visited 
 	color: darkgray 
-	font-size: 22px 
 	text-decoration: none
+
 main
 	display: flex
 	flex-wrap: wrap
@@ -30,24 +31,47 @@ main
 #albumcontainer
 	display: flex
 	flex-wrap: wrap
+	justify-content: center
+	width: 100%
+.bild
+	position: relative
+	width: 100%
+	padding-top: 75%
+.img
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+img
 	width: 100%
 
 figure
 	width: 33%
-	margin: 0
-.bild
-	height: 80%
+	margin: 2%
 	background-color: grey
+	
 figcaption
-	height: 20%
+	height: 4em
 	background-color: black
 	color: grey
-img
-	width: 100%
 
-@media screen and (max-width: 1080px) and (min-resolution: 192dpi)
+@media screen and (max-width: 480px), (min-resolution: 192dpi), (orientation: portrait)
 
 	#albumcontainer
 		background-color: grey
 	figure
-		width: 100%
+		position: relative
+		width: 90%
+		margin-bottom: 3%
+
+	ul
+		margin: 5%
+	nav
+		height: 5%
+		text-align: center
+		justify-content: center
+
+	body
+		font-size: 5vw
+	
